@@ -87,7 +87,7 @@ def generate_asn_network(number_of_subnets=None):
 
     # Borrow n bits for y networks requested
     logging.debug(
-        f"Borriwing {NUM_BORROWD_BITS_NEEDED} buts for {number_of_subnets} networks requested"
+        f"Borriwing {NUM_BORROWD_BITS_NEEDED} bits for {number_of_subnets} networks requested"
     )
 
     num_borrowed_bits = default_network.prefixlen + NUM_BORROWD_BITS_NEEDED

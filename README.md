@@ -9,6 +9,12 @@ Inputs:
 - Number of networks you want
 - (optional) specify exact number of subnets per network
 
+Output:
+
+- A `List` of networks, optionally subnetted as requested.
+
+If exact number of subnets is not chosen, then the default class subnet is used.
+
 # Usage example
 
 > Only a recent python 3 is neded. There are no external dependencies to install. :)
@@ -29,7 +35,7 @@ DEBUG:root:You have been assigned 112.162.186.208
 DEBUG:root:Your ina assigned network address is 112.0.0.0/8
 DEBUG:root:The deault number of subnets for 112.0.0.0/8 is 2
 DEBUG:root:The default number of subnets for 112.0.0.0/8 is 2, but we want 6
-DEBUG:root:Borriwing 3 buts for 6 networks requested
+DEBUG:root:Borriwing 3 bits for 6 networks requested
 DEBUG:root:The number of borrowed bits for network are: 11
 DEBUG:root:Great. We wanted at least 6 and we have 8
 DEBUG:root:The max number of hosts per subnet is now: 2097152
@@ -38,7 +44,7 @@ DEBUG:root:You have been assigned 188.156.194.98
 DEBUG:root:Your ina assigned network address is 188.156.0.0/16
 DEBUG:root:The deault number of subnets for 188.156.0.0/16 is 2
 DEBUG:root:The default number of subnets for 188.156.0.0/16 is 2, but we want 3
-DEBUG:root:Borriwing 2 buts for 3 networks requested
+DEBUG:root:Borriwing 2 bits for 3 networks requested
 DEBUG:root:The number of borrowed bits for network are: 18
 DEBUG:root:Great. We wanted at least 3 and we have 4
 DEBUG:root:The max number of hosts per subnet is now: 16384
@@ -47,7 +53,7 @@ DEBUG:root:You have been assigned 113.93.88.76
 DEBUG:root:Your ina assigned network address is 113.0.0.0/8
 DEBUG:root:The deault number of subnets for 113.0.0.0/8 is 2
 DEBUG:root:The default number of subnets for 113.0.0.0/8 is 2, but we want 1
-DEBUG:root:Borriwing 0 buts for 1 networks requested
+DEBUG:root:Borriwing 0 bits for 1 networks requested
 DEBUG:root:The number of borrowed bits for network are: 8
 DEBUG:root:Great. We wanted at least 1 and we have 1
 DEBUG:root:The max number of hosts per subnet is now: 16777216
